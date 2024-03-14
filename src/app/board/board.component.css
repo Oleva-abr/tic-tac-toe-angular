@@ -11,6 +11,11 @@
   margin-top: 40px;
 }
 
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
 button {
   margin-top: 20px;
 }

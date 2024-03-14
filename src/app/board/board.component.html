@@ -7,8 +7,11 @@
     </div>
   </ng-container>
 
-  <ng-container *ngIf="winner">
+  <div class="message">
+    @if (winner) {
     <div class="winner">Player {{ winner }} won the game!</div>
-  </ng-container>
-  <button (click)="restartGame()">Play Again</button>
+    }
+
+    <button (click)="restartGame()">Play Again</button>
+  </div>
 </div>
