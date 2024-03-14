@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CellComponent } from '../cell/cell.component';
 
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-board',
   standalone: true,
-  imports: [CellComponent, CommonModule, NgIf],
+  imports: [CellComponent, CommonModule],
   templateUrl: './board.component.html',
   styleUrl: './board.component.css',
 
