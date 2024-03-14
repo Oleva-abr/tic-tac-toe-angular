@@ -1,0 +1,14 @@
+<div class="board">
+  <ng-container
+    *ngFor="let cell of cells; let index = index; trackBy: trackByIndex"
+  >
+    <div>
+      <app-cell [value]="cell" (cellClick)="handleClick(index)"></app-cell>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="winner">
+    <div class="winner">Player {{ winner }} won the game!</div>
+  </ng-container>
+  <button (click)="restartGame()">Play Again</button>
+</div>

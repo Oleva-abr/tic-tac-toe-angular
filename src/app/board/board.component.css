@@ -1,0 +1,16 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 300px;
+}
+
+.winner {
+  margin-top: 40px;
+}
+
+button {
+  margin-top: 20px;
+}
