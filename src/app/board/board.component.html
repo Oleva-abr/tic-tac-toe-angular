@@ -1,11 +1,21 @@
 <div class="board">
-  <ng-container
+  <ng-template
+    ngFor
+    let-cell
+    [ngForOf]="cells"
+    let-index="index"
+    [ngForTrackBy]="trackByIndex"
+  >
+    <app-cell [value]="cell" (cellClick)="handleClick(index)"></app-cell>
+  </ng-template>
+
+  <!-- <ng-container
     *ngFor="let cell of cells; let index = index; trackBy: trackByIndex"
   >
     <div>
       <app-cell [value]="cell" (cellClick)="handleClick(index)"></app-cell>
     </div>
-  </ng-container>
+  </ng-container> -->
 
   <div class="message">
     @if (winner) {
